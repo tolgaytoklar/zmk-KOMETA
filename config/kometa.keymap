@@ -16,6 +16,20 @@
 };
 
 / {
+    combos {
+        compatible = "zmk,combos";
+
+        ju-enter {
+            bindings = <&kp ENTER>;
+            key-positions = <7 19>;
+        };
+
+        fr-enter {
+            bindings = <&kp ENTER>;
+            key-positions = <16 4>;
+        };
+    };
+
     keymap {
         compatible = "zmk,keymap";
 
