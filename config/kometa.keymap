@@ -28,6 +28,18 @@
             bindings = <&kp ENTER>;
             key-positions = <16 4>;
         };
+
+        tozero {
+            bindings = <&to 0>;
+            key-positions = <29 17>;
+            layers = <5>;
+        };
+
+        esc {
+            bindings = <&kp ESCAPE>;
+            key-positions = <0 12>;
+            layers = <5>;
+        };
     };
 
     keymap {
@@ -88,10 +100,10 @@
 
         overwatch {
             bindings = <
-&kp TAB           &kp Q  &kp W  &kp E        &kp R         &kp F1  &kp Y      &kp U  &kp I              &kp O    &kp P     &kp BACKSPACE
-&kp LEFT_SHIFT    &kp A  &kp S  &kp D        &kp F         &kp H   &kp H      &kp J  &kp K              &kp L    &kp SEMI  &kp RIGHT_ALT
-&kp LEFT_CONTROL  &kp Z  &kp X  &kp C        &kp V         &kp T   &kp N      &kp M  &kp COMMA          &kp DOT  &kp FSLH  &kp RIGHT_SHIFT
-                                &lt 1 SPACE  &kp LEFT_ALT  &to 0   &kp SPACE  &mo 1  &kp RIGHT_COMMAND
+&kp TAB           &kp Q  &kp W  &kp E      &kp R             &kp F1        &kp Y      &kp U  &kp I              &kp O    &kp P     &kp BACKSPACE
+&kp LEFT_SHIFT    &kp A  &kp S  &kp D      &kp F             &kp H         &kp H      &kp J  &kp K              &kp L    &kp SEMI  &kp RIGHT_ALT
+&kp LEFT_CONTROL  &kp Z  &kp X  &kp C      &kp V             &kp T         &kp N      &kp M  &kp COMMA          &kp DOT  &kp FSLH  &kp RIGHT_SHIFT
+                                &kp SPACE  &kp LEFT_CONTROL  &kp LEFT_ALT  &kp SPACE  &mo 1  &kp RIGHT_COMMAND
             >;
         };
     };
